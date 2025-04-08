@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Taskify UI</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <div class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-white shadow-md p-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Taskify Dashboard</h1>
+      <div>
+        <span class="text-sm text-gray-500">Welcome, Gunj</span>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="flex flex-1">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-white border-r p-4 hidden md:block">
+        <nav class="space-y-2">
+          <a href="#" class="block p-2 rounded hover:bg-gray-200 font-medium">Dashboard</a>
+          <a href="#" class="block p-2 rounded hover:bg-gray-200">My Tasks</a>
+          <a href="#" class="block p-2 rounded hover:bg-gray-200">Teams</a>
+          <a href="#" class="block p-2 rounded hover:bg-gray-200">Settings</a>
+        </nav>
+      </aside>
+
+      <!-- Content -->
+      <section class="flex-1 p-6">
+        <h2 class="text-2xl font-semibold mb-4">Today's Tasks</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <!-- Task Card -->
+          <div class="bg-white p-4 rounded shadow">
+            <h3 class="text-lg font-semibold">UI Design Fixes</h3>
+            <p class="text-sm text-gray-600">Adjust dashboard spacing & fix navbar bugs.</p>
+            <span class="text-xs bg-yellow-200 text-yellow-800 px-2 py-1 rounded mt-2 inline-block">In Progress</span>
+          </div>
+
+          <div class="bg-white p-4 rounded shadow">
+            <h3 class="text-lg font-semibold">Client Meeting</h3>
+            <p class="text-sm text-gray-600">Zoom call at 3:30 PM for feedback.</p>
+            <span class="text-xs bg-green-200 text-green-800 px-2 py-1 rounded mt-2 inline-block">Completed</span>
+          </div>
+
+          <div class="bg-white p-4 rounded shadow">
+            <h3 class="text-lg font-semibold">Fix Dark Mode</h3>
+            <p class="text-sm text-gray-600">Ensure mobile responsiveness.</p>
+            <span class="text-xs bg-red-200 text-red-800 px-2 py-1 rounded mt-2 inline-block">Pending</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
